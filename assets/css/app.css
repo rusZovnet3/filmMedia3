@@ -1,9 +1,10 @@
+@import url("../font/Prompt-Regular.ttf");
 *{
 	margin: 0;
 }
 
 body{
-	font-family: 'Tahoma', sans-serif;
+	font-family: 'Prompt', sans-serif;
 }
 
 /*-----------NAVEGACION-----------*/
@@ -20,7 +21,7 @@ body{
 	padding: 0 50px;
 	height: 100%;
 	color: white;
-	font-family: 'Arial', sans-serif;
+	font-family: 'Prompt', sans-serif;
 }
 
 
@@ -98,6 +99,7 @@ body{
 	right: 1px;
 	border-radius: 50%;
 	cursor: pointer;
+	transition: 1s ease all;
 }
 
 
@@ -237,6 +239,33 @@ body{
 	color: lightgray;
 	opacity: .5;
 	cursor: pointer;
+}
+
+/*Cambio de fondo*/
+.container.active{
+	background-color: white;
+}
+.movie-list-title.active{
+	color: #DC2C2C;
+}
+.navbar-container.active{
+	background-color: white;
+	color: black;
+}
+
+
+.toggle.active{
+	background-color: black;
+}
+.toggle-ball.active{
+	background-color: white;
+	transform: translateX(-20px);
+}
+.sidebar.active{
+	background-color: white;
+}
+.left-menu-icon.active{
+	color: black;
 }
 
 
