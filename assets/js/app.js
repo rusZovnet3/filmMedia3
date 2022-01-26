@@ -9,8 +9,9 @@
 		const itemNumber = listaPeli[i].querySelectorAll("img").length;
 		let clickCounter = 0;
 		arrows.addEventListener("click",()=>{
+			const ratio = Math.floor(window.innerWidth / 270);
 			clickCounter++;
-			if (itemNumber - (4 + clickCounter) >= 0) {
+			if (itemNumber - (4 + clickCounter) + (4 - ratio) >= 0) {
 					listaPeli[i].style.transform = `translateX(${
 					listaPeli[i].computedStyleMap().get("transform")[0].x.value - 300}px)`;
 			}else {
@@ -25,7 +26,9 @@
 		});
 		//console.log(listaPeli[i].computedStyleMap().get("transform")[0].x.value);
 		//console.log(listaPeli[i].querySelectorAll("img").length);
-		console.log(Math.floor(window.innerWidth / 270));
+		//console.log(Math.floor(window.innerWidth / 270));
+		//---console.log(window.innerWidth/270);
+		//console.log(Math.floor(window.innerWidth/270));
 	});
 
 
